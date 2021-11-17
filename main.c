@@ -1,76 +1,48 @@
 #include <stdio.h>
 #include <math.h>
 #include <string.h>
-void Addition(float a, float b)
-{
-    printf("The Addition of %f and %f is %f", a, b, a + b);
-}
-
-float Subtraction(float a, float b)
-{
-    printf("The Subtraction of %f and %f is %f", a, b, a - b);
-}
-float Multiplication(float a, float b)
-{
-    printf("The Multiplication of %f and %f is %f", a, b, a * b);
-}
-float Division(float a, float b)
-{
-    printf("The Division of %f and %f is %f", a, b, a / b);
-}
 
 int main()
 {   
-    char answer;
-    float num1, num2, result;
-    char inputUser;
+    char answer[10];
     printf("Welcome To Cli Calculator\nMade by Argha Datta\n");
-    printf("Please enter your state of operation: ");
-    scanf("%c",&inputUser);
-    if (inputUser == '+')
-    {   
-        printf("Enter Your First Number for Operation : ");
-        scanf("%f", &num1);
-        printf("Enter Your Second Number for Operation : ");
-        scanf("%f",&num2);
-        Addition(num1,num2);
-    }
-    else if (inputUser == '-')
+    
+    do
     {
-        printf("Enter Your First Number for Operation : ");
-        scanf("%f", &num1);
-        printf("Enter Your Second Number for Operation : ");
+        char inputUser;
+        float num1, num2, result;
+        printf("Please enter your state of operation: \n");
+        scanf("%c",&inputUser);
+    
+        printf("Enter the first operand: ");
+        scanf("%f",&num1);
+        printf("Enter the second operand: ");
         scanf("%f",&num2);
-        Subtraction(num1,num2);
-    }
-    else if (inputUser == '*')
-    {
-        printf("Enter Your First Number for Operation : ");
-        scanf("%f", &num1);
-        printf("Enter Your Second Number for Operation : ");
-        scanf("%f",&num2);
-        Multiplication(num1,num2);
-    }
-    else if (inputUser == '/')
-    {
-        printf("Enter Your First Number for Operation : ");
-        scanf("%f", &num1);
-        printf("Enter Your Second Number for Operation : ");
-        scanf("%f",&num2);
-        Division(num1,num2);
-    }
-    else if (inputUser == '^')
-    {
-        printf("Enter Your First Number for Operation : ");
-        scanf("%f", &num1);
-        printf("Enter Your Second Number for Operation : ");
-        scanf("%f",&num2);
-        printf("The result of %f ^ %f is : %f",num1,num2,powf(num1,num2));
-    }
-    else
-    {
-        printf("You have entered wrong operation,please try again!");
-    }
+        switch (inputUser)
+        {
+        case '+':
+            printf("The Addition of %f and %f is %f\n",num1,num2,num1+num2);
+            break;
+        case '-':
+            printf("The Subtraction of %f and %f is %f\n",num1,num2,num1-num2);
+            break;
+        case '*':
+            printf("The Multiplication of %f and %f is %f\n",num1,num2,num1*num2);
+            break;
+        case '/':
+            printf("The Division of %f and %f is %f\n",num1,num2,num1/num2);
+            break;
+        case '^':
+            printf("The Result of %f ^ %f is %f\n",num1,num2,powf(num1,num2));
+        default:
+            printf("Invalid Operation,please try again!\n");
+            break;
+        }
+        printf("Do you want to run it again(if yes ,type yes or type no for exit) :");
+        scanf("%s",answer);
+
+    } while (strcmp(answer,"yes")  == 0);
+    
     return 0;
 }
 
