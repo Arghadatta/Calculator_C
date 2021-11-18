@@ -1,9 +1,10 @@
 # [Calculator_C](https://github.com/Arghadatta/Calculator_C) - [Argha_Datta](https://github.com/Arghadatta)
 A Cli-Based Calculator based on C(Under Development)
+
 My first project on C !
 
 
-Instruction:
+Instructions:
 - Run it in CMD(Command Prompt or Windows Powershell)
 - Operations are +(Addition), -(Subtraction), *(Multiplication), /(Division), ^(Power)
 - The Operands are the first two numbers user will use!
