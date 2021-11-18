@@ -6,7 +6,7 @@ My first project on C !
 
 Instructions:
 - Run it in CMD(Command Prompt or Windows Powershell)
-- Operations are +(Addition), -(Subtraction), *(Multiplication), /(Division), ^(Power)
+- Operations are +(Addition), -(Subtraction), *(Multiplication), /(Division), ^(Power) --> Use the Icons of operations!
 - The Operands are the first two numbers user will use!
 - If reusing the Calculator,just press yes to restart or use no to exit!
 
