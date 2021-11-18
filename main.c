@@ -5,13 +5,14 @@
 int main()
 {   
     char answer[10];
+    char dump;
     printf("Welcome To Cli Calculator\nMade by Argha Datta\n");
     
     do
     {
         char inputUser;
         float num1, num2, result;
-        printf("Please enter your state of operation: \n");
+        printf("Please enter your state of operation: ");
         scanf("%c",&inputUser);
     
         printf("Enter the first operand: ");
@@ -40,6 +41,7 @@ int main()
         }
         printf("Do you want to run it again(if yes ,type yes or type no for exit) :");
         scanf("%s",answer);
+        dump = getchar();
 
     } while (strcmp(answer,"yes")  == 0);
     
