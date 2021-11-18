@@ -1,4 +1,4 @@
-#[Calculator_C](https://github.com/Arghadatta/Calculator_C) - [Argha_Datta](https://github.com/Arghadatta)
+# [Calculator_C](https://github.com/Arghadatta/Calculator_C) - [Argha_Datta](https://github.com/Arghadatta)
 A Cli-Based Calculator based on C(Under Development)
 My first project on C !
 
